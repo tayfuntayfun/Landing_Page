@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+
+body {
+  background-color: #9CB68;
+  font-family:'Francois One', sans-serif;
+}
+
+#header {
+  background-color: #000033;
+  position: fixed;
+  color: yellow;
+  box-shadow: 6px 5px 10px 6px blue;
+  top: 0px;
+  width: 100%;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 568px) {
+      flex-wrap: wrap;
+  }
+}
+#header-img {
+  padding: 1px;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 27px;
+  
+  @media (max-width: 568px) 
+  {
+    flex-wrap: wrap;
+  }
+}
+
+h1 {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 52px;
+  background: -webkit-linear-gradient(red, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#nav-bar {
+  padding: 3px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  text-align: center;
+  @media (max-width: 568px) {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+
+#nav-bar a {
+  margin: 11px;
+  padding: 7px;
+  background-color: darkblue;
+  border: 2px solid rgb(51,51,51);
+  border-radius: 9px;
+  @media (max-width: 568px) {
+    flex-direction: column;
+  }
+}
+
+.nav-link {
+  margin: 29px;
+  padding: 1px;
+  font-size: 19px;
+  color: yellow;
+  text-decoration: none;
+  font-family: 'Turret Road', cursive;
+  @media (max-width: 568px) {
+  flex-direction: column;
+  }
+}
+
+button {
+  margin: 11px;
+  padding: 7px;
+  background-color: rgb(51,0,102);
+  border: 2px solid rgb#ffff00;
+  border-radius: 20px;
+  @media (max-width: 568px) {
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 150px
+}
+
+ h2 {
+    margin-top; 70px;
+    margin-bottom: 40px;
+    color: darkblue;
+    font-size: 35px;
+    text-shadow: 2px 2px 3px gray;
+}
+   
+p {
+    font-size: 19px;
+}
+
+#email {
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    margin: 13px;
+    width: 323px;
+    height: 27px;
+    border: 4px solid #000077;
+    border-radius: 14px;
+  }
+
+#submit {
+    color: white;
+    padding: 10px 10px 8px;
+    background-color: #0F5897;
+    border-radius: 9px;
+}
+
+#submit:hover {
+    background-color:red;
+    transition: background-color 2s;
+
+   @media (max-width: 568px) {
+    margin-top: 320px;
+  }
+}
+
+#features {
+  margin-top: 20px;
+  padding: 13px;
+  margin-left: 200px;
+  width: 70%;
+}
+ 
+#features .icon {  
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: left;
+   
+    @media (max-width: 568px) {
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+      padding: 20px;
+      height: 250px;
+    }
+}
+
+iframe {
+       width: 560; 
+       height: 315;
+       margin: 0 auto;
+       display:block;
+      } 
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+  
+#pricing .btn {
+  border: 0;
+  margin: 10px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
+  justify-content: bottom;
+
+}
+
+#pricing .btn:hover {
+    background-color: darkorange;
+    transition: background-color 2s;
+}
+   
+.feature-wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 340px;
+  margin: 11px;
+  border: 7px solid; rgb(120,112,32);
+  border-radius: 9px;
+}
+
+#pricing .btn {
+  margin: 10px 0;
+  background-color: #f1c40f;
+  padding: 13px;
+  width: 97px;
+
+}
+  .option {
+    font-size: 33px;
+    text-align: center;
+    color: red;
+    padding: 7px;
+    text-decoration: underline;
+  }
+
+ li {
+    text-align: left;
+ }
+  @media (max-width: 568px) {
+    flex-direction: column;
+    #featured-for-womens, #featured-for-mens, #weeksbestbudget {
+      max-width: 568px;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+  }
+
+footer {
+  margin: auto;
+  text-align: center;
+}
